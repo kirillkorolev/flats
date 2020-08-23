@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="тестовое задание для компании «Сайт-Мастер»">
+  <meta name="keywords" content="тест, test, html, js, Сайт-Мастер, site-master">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-medium.woff" as="font">
+  <link rel="shortcut icon" type="image/ico" sizes="16x16" href="favicon.ico">
+  <title>Квартиры в новых домах</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/plugins/picturefill.min.js" async=""></script>
+</head>
+<body>
+  <div style="display: none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-check" viewBox="0 0 12 10"><path d="M4.751 8.983a.543.543 0 01-.77 0L.906 5.908a.817.817 0 010-1.155l.385-.386a.817.817 0 011.155 0l1.92 1.92L9.554 1.1a.817.817 0 011.155 0l.385.385c.32.319.32.836 0 1.155L4.751 8.983z" fill="#fff"></path></symbol><symbol id="icon-cross" viewBox="0 0 9 8">
+<path d="M8.5 0.942702L7.5573 0L4.49999 3.05729L1.4427 0L0.5 0.942702L3.55729 3.99999L0.5 7.0573L1.4427 8L4.49999 4.94271L7.55728 8L8.49998 7.0573L5.44271 3.99999L8.5 0.942702Z" fill="currentColor"></path>
+</symbol><symbol id="icon-metro" viewBox="0 0 16 12">
+<path d="M14.8992 9.96333L11.1616 0.5L8 6.03201L4.8512 0.5L1.1008 9.96333H0V11.3976H5.6576V9.96333H4.8128L5.632 7.6071L8 11.5L10.368 7.6071L11.1872 9.96333H10.3424V11.3976H16V9.96333H14.8992Z" fill="#FF0013"></path>
+</symbol><symbol id="icon-plus" viewBox="0 0 30 30">
+<path d="M1.17188 13.8281H13.8281V1.17188C13.8281 0.524648 14.3528 0 15 0C15.6472 0 16.1719 0.524648 16.1719 1.17188V13.8281H28.8281C29.4754 13.8281 30 14.3528 30 15C30 15.6472 29.4754 16.1719 28.8281 16.1719H16.1719V28.8281C16.1719 29.4754 15.6472 30 15 30C14.3528 30 13.8281 29.4754 13.8281 28.8281V16.1719H1.17188C0.524649 16.1719 0 15.6472 0 15C0 14.3528 0.524649 13.8281 1.17188 13.8281Z" fill="currentColor"></path>
+</symbol><symbol id="icon-up-arrow" viewBox="0 0 13 8">
+<path d="M6.036 0.611083L0.191897 6.45712C-0.0639745 6.71364 -0.0639745 7.12925 0.191897 7.38642C0.44777 7.64294 0.863375 7.64294 1.11925 7.38642L6.49964 2.00408L11.88 7.38577C12.1359 7.64229 12.5515 7.64229 12.808 7.38577C13.0639 7.12925 13.0639 6.713 12.808 6.45648L6.96399 0.610435C6.71076 0.357856 6.28863 0.357856 6.036 0.611083Z" fill="currentColor"></path>
+</symbol><symbol id="icon-walking" viewBox="0 0 10 17">
+<path d="M4.63987 3.57246C5.48831 3.57246 6.1761 2.88467 6.1761 2.03623C6.1761 1.18779 5.48831 0.5 4.63987 0.5C3.79143 0.5 3.10364 1.18779 3.10364 2.03623C3.10364 2.88467 3.79143 3.57246 4.63987 3.57246Z" fill="#AFAFAF"></path>
+<path d="M8.86701 7.37373C7.60193 6.64142 6.56392 5.65223 5.69015 4.48854C5.1411 3.71641 3.68949 3.75672 3.09963 4.46425C2.20233 5.33727 1.44097 6.23708 0.837096 7.13739C0.590238 7.50617 0.68838 8.00515 1.05692 8.25201C1.19437 8.34414 1.34934 8.3882 1.50331 8.3882C1.76219 8.3882 2.01656 8.26327 2.17129 8.03194C2.43642 7.63711 2.73711 7.24104 3.07009 6.84671C3.05732 7.68118 3.09913 9.18686 3.12016 9.8636C3.12717 10.0889 3.07585 10.3092 2.9712 10.5093C2.14299 12.0908 1.61322 13.5873 1.07544 15.4179C0.943751 15.8648 1.19987 16.3338 1.64652 16.4652C1.74767 16.495 1.84982 16.505 1.94846 16.4975C2.28846 16.4714 2.5924 16.2399 2.69404 15.8939C3.19027 14.2059 3.66971 12.8392 4.41755 11.3921C4.4556 11.3936 4.49366 11.3936 4.53222 11.3918C5.00966 12.8164 5.48735 14.2417 5.96555 15.6663C6.3128 16.7045 7.92389 16.1653 7.57564 15.1267C7.05313 13.5692 6.53137 12.0125 6.01061 10.4552C5.98032 10.3658 5.90696 10.0158 5.8967 9.90165C5.81057 8.94226 5.77928 7.98587 5.78854 7.02823C6.52161 7.7305 7.33454 8.33963 8.2376 8.86289C9.13816 9.38565 9.75556 7.88873 8.86701 7.37373Z" fill="#AFAFAF"></path>
+</symbol></svg>
+  </div>
+  <main>
+    <h1 class="visually-hidden">Тестовое задание для компании «Сайт-Мастер»</h1>
+    <section class="flats">
+      <h2 class="visually-hidden">Список квартир</h2>
+      <div class="flats__wrap">
+        <ul class="flats__list">
+          <li class="flats__item">
+            <picture>
+              <source type="img/webp" srcset="./img/pictures/rascvetai-na-markse@1x.webp, ./img/pictures/rascvetai-na-markse@2x.webp 2x">
+              <img class="flats__image" src="img/pictures/rascvetai-na-markse@1x.png" srcset="img/pictures/rascvetai-na-markse@2x.png 2x" alt="Расцветай на Маркса">
+            </picture>
+            <div class="flats__description">
+              <h3 class="flats__item-title">Расцветай на Маркса</h3>
+              <div class="flats__terms">Срок сдачи до 3 кв. 2022 г.</div>
+              <div class="flats__location">
+                <svg class="flats__metro-icon" width="16" height="11">
+                  <use xlink:href="#icon-metro"></use>
+                </svg>
+                <span class="flats__metro">Студенческая</span>
+                <span class="flats__time">5 мин.</span>
+                <svg class="flats__moving-style" width="9" height="16">
+                  <use xlink:href="#icon-walking"></use>
+                </svg>
+              </div>
+              <div class="flats__address">пр. Карла Маркса, 167/2</div>
+            </div>
+            <span class="flats__service-label">Услуги 0%</span>
+            <span class="flats__comfort-label">Комфорт+</span>
+          </li>
+        </ul>
+        <div class="flats__button-wrap">
+          <button class="flats__show-more-items js-show-more-button" type="button" aria-label="показать еще варинты">
+            <span class="flats__plus-wrap">
+              <svg class="flats__plus-icon" width="30" height="30">
+                <use xlink:href="#icon-plus"></use>
+              </svg>
+            </span>
+            <span class="flats__show-more-slogan">Показать еще</span>
+          </button>
+        </div>
+      </div>
+      <aside class="flats__filter filter">
+        <form class="filter__form" method="POST">
+          <div class="filter__item filter__item--distance">
+            <button class="filter__menu-button js-filter-hide-button" type="button">
+              <span>Близость к метро</span>
+              <svg class="filter__up-arrow-icon" width="13" height="8">
+                <use xlink:href="#icon-up-arrow"></use>
+              </svg>
+            </button>
+            <ul class="filter__distance-list distance">
+              <li class="distance__item distance__item--less-then-10">
+                <input class="visually-hidden distance__input" id="distance-less-10" type="checkbox" value="less-than-10" name="close-to-metro" checked="">
+                <label class="distance__label" for="distance-less-10">&#60;10</label>
+              </li>
+              <li class="distance__item distance__item--10-20">
+                <input class="visually-hidden distance__input" id="distance-10-20" type="checkbox" value="between-10-and-20" name="close-to-metro" checked="">
+                <label class="distance__label" for="distance-10-20">10-20</label>
+              </li>
+              <li class="distance__item distance__item--20-40">
+                <input class="visually-hidden distance__input" id="distance-20-40" type="checkbox" value="between-20-and-40" name="close-to-metro" checked="">
+                <label class="distance__label" for="distance-20-40">20-40</label>
+              </li>
+              <li class="distance__item distance__item--over-40">
+                <input class="visually-hidden distance__input" id="distance-over-40" type="checkbox" value="over-40" name="close-to-metro">
+                <label class="distance__label" for="distance-over-40">40+</label>
+              </li>
+              <li class="distance__item distance__item--any-distance">
+                <input class="visually-hidden distance__input" id="distance-any" type="checkbox" value="any" name="close-to-metro">
+                <label class="distance__label" for="distance-any">Любая</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__item filter__item--terms">
+            <button class="filter__menu-button js-filter-hide-button" type="button">
+              <span>Срок сдачи</span>
+              <svg class="filter__up-arrow-icon" width="13" height="8">
+                <use xlink:href="#icon-up-arrow"></use>
+              </svg>
+            </button>
+            <ul class="filter__terms-list terms">
+              <li class="terms__item terms__item--any">
+                <input class="visually-hidden terms__input" type="radio" id="terms-any" name="trim-type" value="any" checked="">
+                <label class="terms__label" for="terms-any">Любой</label>
+              </li>
+              <li class="terms__item terms__item--ready">
+                <input class="visually-hidden terms__input" type="radio" id="terms-ready" name="trim-type" value="ready">
+                <label class="terms__label" for="terms-ready">Сдан</label>
+              </li>
+              <li class="terms__item terms__item--this-year">
+                <input class="visually-hidden terms__input" type="radio" id="terms-this-year" name="trim-type" value="this-year">
+                <label class="terms__label" for="terms-this-year">В этом году</label>
+              </li>
+              <li class="terms__item terms__item--next-year">
+                <input class="visually-hidden terms__input" type="radio" id="terms-next-year" name="trim-type" value="next-year">
+                <label class="terms__label" for="terms-next-year">В следующем году</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__item filter__item--additional-options">
+            <button class="filter__menu-button js-filter-hide-button" type="button">
+              <span>Дополнительные опции</span>
+              <svg class="filter__up-arrow-icon" width="13" height="8">
+                <use xlink:href="#icon-up-arrow"></use>
+              </svg>
+            </button>
+            <div class="filter__options-wrap">
+              <ul class="filter__options-list options">
+                <li class="options__item options__item--no-cars">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-no-cars" name="additional-options" value="no-cars" checked="">
+                  <label class="options__label" for="option-no-cars">Двор без машин</label>
+                </li>
+                <li class="options__item options__item--ceiling">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-ceiling" name="additional-options" value="ceiling">
+                  <label class="options__label" for="option-ceiling">Высокие потолки</label>
+                </li>
+                <li class="options__item options__item--pantries">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-pantries" name="additional-options" value="pantries">
+                  <label class="options__label" for="option-pantries">Есть кладовые</label>
+                </li>
+                <li class="options__item options__item--big-windows">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-big-windows" name="additional-options" value="big-windows">
+                  <label class="options__label" for="option-big-windows">Панорамные окна</label>
+                </li>
+                <li class="options__item options__item--low-rise">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-low-rise" name="additional-options" value="low-rise">
+                  <label class="options__label" for="option-low-rise">Малоэтажный (&#60;10 этажей)</label>
+                </li>
+                <li class="options__item options__item--option-1 options__item--hidden">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-1" name="additional-options" value="option-1">
+                  <label class="options__label" for="option-1">Опция-1</label>
+                </li>
+                <li class="options__item options__item--option-2 options__item--hidden">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-2" name="additional-options" value="option-2">
+                  <label class="options__label" for="option-2">Опция-2</label>
+                </li>
+                <li class="options__item options__item--option-3 options__item--hidden">
+                  <input class="visually-hidden options__input" type="checkbox" id="option-3" name="additional-options" value="option-3">
+                  <label class="options__label" for="option-3">Опция-3</label>
+                </li>
+              </ul>
+              <button class="options__show-more js-options-show-more" type="button" aria-label="показать еще возможные варианты">
+                <span class="options__more-slogan">Показать еще</span>
+                <span class="options__hidden-optiona-ammount">(3)</span>
+              </button>
+            </div>
+          </div>
+          <div class="filter__service-item">
+            <input class="visually-hidden filter__service-input" id="filter-service" type="checkbox" name="service" checked="">
+            <label class="filter__service-label" for="filter-service"><span>Услуги 0%</span></label>
+          </div>
+          <button class="filter__submit-button" type="submit">Применить фильтры</button>
+          <button class="filter__reset-button" type="reset">
+            <span class="filter__reset-slogan">Сбросить фильтры</span>
+            <svg class="filter__cross" width="8" height="8">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+          </button>
+        </form>
+      </aside>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+</html>
